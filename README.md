@@ -4,7 +4,7 @@ Add `.gitignore` files to your projects from the command-line.
 
 ## Demo
 
-![gitignorer demo](https://asciinema.org/a/dnec9w791li58hy18a9igicg6)
+[![asciicast](https://asciinema.org/a/dnec9w791li58hy18a9igicg6.png)](https://asciinema.org/a/dnec9w791li58hy18a9igicg6)
 
 ## Install
 

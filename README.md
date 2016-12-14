@@ -1,4 +1,4 @@
-# gitignorer
+# git-ignore
 
 Add `.gitignore` files to your projects from the command-line.
 

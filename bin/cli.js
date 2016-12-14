@@ -6,6 +6,7 @@ const inquirer = require('inquirer')
 const cwd = process.cwd()
 const fullPath = path.join(cwd, '.gitignore')
 const chalk = require('chalk')
+const logSymbols = require('log-symbols')
 
 const { choices, createGitignoreFile, capitalizeFirstLetter } = require('../lib/index')
 
@@ -21,12 +22,10 @@ if (process.argv.length === 3) {
   createGitignoreFile(lang)
     .then((resp) => {
       fs.createWriteStream(fullPath).write(resp.data)
-      console.log(chalk.green('Success!'))
-      console.log(`${lang} gitignore file created: ${fullPath}`)
+      console.log(logSymbols.success, chalk.green(`${lang} gitignore file created:`), `${fullPath}`)
     })
     .catch((err) => {
-      console.log(chalk.red('Uh Oh!'))
-      console.log(err)
+      console.log(logSymbols.error, chalk.red(`${lang} gitignore failed:`), `${err}`)
     })
 } else {
   inquirer.prompt([question]).then((response) => {
@@ -34,12 +33,10 @@ if (process.argv.length === 3) {
     createGitignoreFile(lang)
       .then((resp) => {
         fs.createWriteStream(fullPath).write(resp.data)
-        console.log(chalk.green('Success!'))
-        console.log(`${lang} gitignore file created: ${fullPath}`)
+        console.log(logSymbols.success, chalk.green(`${lang} gitignore file created:`), `${fullPath}`)
       })
       .catch((err) => {
-        console.log(chalk.red('Uh Oh!'))
-        console.log(err)
+        console.log(logSymbols.error, chalk.red(`${lang} gitignore failed:`), `${err}`)
       })
   })
 }

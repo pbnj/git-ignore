@@ -1,10 +1,6 @@
 # git-ignore
 
-Add `.gitignore` files to your projects from the command-line.
-
-## Demo
-
-[![asciicast](https://asciinema.org/a/9w99hqjo8zk35h43408d2ysz1.png)](https://asciinema.org/a/9w99hqjo8zk35h43408d2ysz1)
+Initialize a `.gitignore` file based on templates from GitHub.
 
 ## Install
 
@@ -12,5 +8,9 @@ Add `.gitignore` files to your projects from the command-line.
 
 ## Usage
 
-- You can pass the language as an argument (e.g. `ignore node`), which will create the proper `.gitignore` file for the given language.
-- Or you can call the CLI without arguments (e.g. `ignore`), which will prompt you with a list of languages to pick from.
+- `ignore node`: Generates a `.gitignore` file for a NodeJS project.
+- `ignore`: Prompts you to select from a list of languages.
+
+## Demo
+
+[![asciicast](https://asciinema.org/a/9w99hqjo8zk35h43408d2ysz1.png)](https://asciinema.org/a/9w99hqjo8zk35h43408d2ysz1)

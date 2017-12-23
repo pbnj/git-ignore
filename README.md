@@ -1,5 +1,7 @@
 # git-ignore
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/petermbenjamin/git-ignore.svg)](https://greenkeeper.io/)
+
 Initialize a `.gitignore` file based on templates from GitHub.
 
 ## Install
